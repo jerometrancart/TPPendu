@@ -29,20 +29,64 @@ namespace TPPendu
         //LE MOT A TROUVER DOIT AVOIR AUTANT DE TIRETS QUE LE MOT CHOISI
         public Pendu()
         {
-            
+            var r = new Random();
+            //GENERE MOI UN INDEX ALEAT ENTRE 0 ET 7
+            var index = r.Next(8);
+            //UTILISE L'INDEX ALEAT POUR CHOISIR LE MOT DANS LA LISTE
+            MotATrouver = mots[index];
+            // // METHODE 1
+            // for (int i = 0; i < MotATrouver.Length; i++)
+            // {
+            //     MotCourant = MotCourant + "-";
+            // }
+
+            // METHODE 2
+            MotCourant = string.Concat(Enumerable.Repeat('-', MotATrouver.Length));
         }
 
         //CREER UN BOOLEEN POUR L'ARRET DU JEU
         //A RECUP DANS LA CLASSE DE LOGIQUE DU JEU
         public bool GagneOuPerdu()
         {
-            return false;
+            return MotCourant == MotATrouver || NbEssai >= NbEssaiMax;
         }
 
         //CREER UNE FONCTION POUR TESTER LES LETTRES SAISIES
         public void TesterLettre(char c)
         {
-
+            if(LettresTestees.Contains(c))
+            {
+                return;
+            }
+            //AJOUTE LA LETTRE TESTEE DANS LA LISTE
+            LettresTestees.Add(c);
+            //GENERE UN TABLEAU DE CHAR A PARTIR D'UN STRING
+            var copie = MotCourant.ToArray();
+            //CREE UN BOOL POUR GERER SI LE JOUEUR S'EST TROMPE
+            bool trouve = false;
+            //PARCOURT CHAQUE LETTRE DU MOT A TROUVER
+            for (int i = 0; i < MotATrouver.Length; i++)
+            {
+                var caractere = MotATrouver[i];
+                //SI DANS MA COPIE TU TROUVES LE MEME CARAC QUE DANS LE MOT ORIGINAL
+                //A LA MEME PLACE, MET A JOUR LE MOT COURANT
+                if(caractere == c)
+                {
+                    copie[i] = c;
+                    //LE JOUEUR NE S'EST PAS TROMPE SUR CE TOUR
+                    trouve = true;
+                }
+            }
+            if(trouve)
+            {   
+                //REAFFICHE LE MOT AVEC UN TIRET EN MOINS
+                MotCourant = new string(copie);
+            }
+            else
+            {
+                //LE JOUEUR S'EST TROMPE, ON SE RAPPROCHE DE LA MORT
+                NbEssai++;
+            }
         }
         //LOGIQUE DU PENDU
         public void AfficherPendu()

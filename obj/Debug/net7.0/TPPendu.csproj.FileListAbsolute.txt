@@ -1,0 +1,15 @@
+C:\wamp64\www\.Net\Section_5\TPPendu\bin\Debug\net7.0\TPPendu.exe
+C:\wamp64\www\.Net\Section_5\TPPendu\bin\Debug\net7.0\TPPendu.deps.json
+C:\wamp64\www\.Net\Section_5\TPPendu\bin\Debug\net7.0\TPPendu.runtimeconfig.json
+C:\wamp64\www\.Net\Section_5\TPPendu\bin\Debug\net7.0\TPPendu.dll
+C:\wamp64\www\.Net\Section_5\TPPendu\bin\Debug\net7.0\TPPendu.pdb
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\TPPendu.csproj.AssemblyReference.cache
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\TPPendu.GeneratedMSBuildEditorConfig.editorconfig
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\TPPendu.AssemblyInfoInputs.cache
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\TPPendu.AssemblyInfo.cs
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\TPPendu.csproj.CoreCompileInputs.cache
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\TPPendu.dll
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\refint\TPPendu.dll
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\TPPendu.pdb
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\TPPendu.genruntimeconfig.cache
+C:\wamp64\www\.Net\Section_5\TPPendu\obj\Debug\net7.0\ref\TPPendu.dll

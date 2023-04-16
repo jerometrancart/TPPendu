@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\wamp64\\www\\.Net\\Section_5\\Pendu\\Pendu\\Pendu.csproj",
-      "projectName": "Pendu",
-      "projectPath": "C:\\wamp64\\www\\.Net\\Section_5\\Pendu\\Pendu\\Pendu.csproj",
+      "projectUniqueName": "C:\\wamp64\\www\\.Net\\Section_5\\TPPendu\\TPPendu.csproj",
+      "projectName": "TPPendu",
+      "projectPath": "C:\\wamp64\\www\\.Net\\Section_5\\TPPendu\\TPPendu.csproj",
       "packagesPath": "C:\\Users\\jerom\\.nuget\\packages\\",
-      "outputPath": "C:\\wamp64\\www\\.Net\\Section_5\\Pendu\\Pendu\\obj\\",
+      "outputPath": "C:\\wamp64\\www\\.Net\\Section_5\\TPPendu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
